@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    min-height: 100svh;
+    background-color: #ccc;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    line-height: 1.7;
+    display: grid;
+    place-items: center;
+}
+
+.feedback-card {
+    background-color: #fff;
+    width: 90%;
+    max-width: min(31em, calc(100vw - 4rem));
+    padding: 3rem 2rem;
+    box-shadow: 0.5rem 0.5rem;
+}
+
+p {
+    margin: 1em 0;
+    font-size: .9rem;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    min-height: 110px;
+    padding: .5em;
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.222);
+}
+
+label {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+.checkbox-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 1.3rem;
+    height: 1.3rem;
+    appearance: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+input:checked {
+    background-color: #cfffa9;
+}
+
+
+input:checked::after {
+    content: "✔";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+
+
+button {
+    appearance: button;
+    flex-grow: 1;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:focus {
+    text-decoration: none;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+button:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+button:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 12px 50px;
+    }
+}
